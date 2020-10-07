@@ -1,8 +1,9 @@
 import React from "react";
+import "./MainContent.css"
 
 function ToDoList() {
     return (
-        <div>
+        <div className="ToDoList">
             <input type="checkbox" />
             <p>placeholder</p>
 

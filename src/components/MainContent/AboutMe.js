@@ -1,11 +1,11 @@
 import React from "react";
 import AvivaBulow from "./AvivaBulow.jpg"
-import "./AboutMe.css"
+import "./MainContent.css"
 
 
 function AboutMe() {
     return (
-        <div>
+        <div className="AboutMe">
             <Photo />
             <Name />
             <Hobbies />

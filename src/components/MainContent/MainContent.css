@@ -1,0 +1,22 @@
+.AboutMe-image {
+    height: 40vmin;
+    pointer-events: none;
+}
+
+.AboutMe-link {
+    color: #61dafb;
+    background-color: azure;
+}
+
+.AboutMe {
+      background-color: aquamarine;
+}
+
+.MainContent-header {
+    align-content: left;
+    background-color: aqua;
+}
+
+.ToDoList {
+    background-color: blueviolet;
+}
