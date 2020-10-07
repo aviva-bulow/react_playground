@@ -9,6 +9,7 @@ function AboutMe() {
             <Photo />
             <Name />
             <Hobbies />
+            <LinkedIn />
         </div>
     )
 }
@@ -29,6 +30,18 @@ function Hobbies() {
         <li>Backpacking</li>
         <li>Gardening</li>
     </ul>
+}
+
+function LinkedIn() {
+    return <a
+        className="AboutMe-linkedin"
+        href="https://www.linkedin.com/in/aviva-bulow/"
+        target="_blank"
+        rel="noopener noreferrer"
+    >
+        Linked In
+        </a>
+
 }
 
 export default AboutMe;
