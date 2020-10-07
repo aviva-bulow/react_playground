@@ -34,7 +34,7 @@ function Hobbies() {
 
 function LinkedIn() {
     return <a
-        className="AboutMe-linkedin"
+        className="AboutMe-link"
         href="https://www.linkedin.com/in/aviva-bulow/"
         target="_blank"
         rel="noopener noreferrer"
