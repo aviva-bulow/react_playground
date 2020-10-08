@@ -7,11 +7,11 @@ import "./MainContent.css"
 function AboutMe() {
   return (
     <div className="AboutMe">
-      <Card >
+      <Card.Body >
         <Photo />
         <Hobbies />
         <LinkedIn />
-      </Card>
+      </Card.Body>
     </div >
   )
 }
@@ -30,30 +30,31 @@ function Hobbies() {
     <div>
       <a id="hobbies"></a>
 
-      <Card.Body>
-        <Card.Title>Hobbies</Card.Title>
-        <Card.Text>
-          <ul>
-            <li>Running</li>
-            <li>Backpacking</li>
-            <li>Gardening</li>
-          </ul>
-        </Card.Text>
-      </Card.Body>
+      <Card.Title>Hobbies</Card.Title>
+      <Card.Text>
+        <ul>
+          <li>Running</li>
+          <li>Backpacking</li>
+          <li>Gardening</li>
+        </ul>
+      </Card.Text>
     </div>
   )
 }
 
 function LinkedIn() {
-  return <a
-    className="AboutMe-link"
-    href="https://www.linkedin.com/in/aviva-bulow/"
-    target="_blank"
-    rel="noopener noreferrer"
-  >
-    Linked In
-        </a>
-
+  return (
+    <Card.Text>
+      <a
+        className="AboutMe-link"
+        href="https://www.linkedin.com/in/aviva-bulow/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Linked In
+            </a>
+    </Card.Text>
+  )
 }
 
 export default AboutMe;
