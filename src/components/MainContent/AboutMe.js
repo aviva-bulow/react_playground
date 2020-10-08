@@ -7,7 +7,7 @@ import "./MainContent.css"
 function AboutMe() {
   return (
     <div className="AboutMe">
-      <Card style={{ width: '18rem' }}>
+      <Card >
         <Photo />
         <Hobbies />
         <LinkedIn />
@@ -17,7 +17,11 @@ function AboutMe() {
 }
 
 function Photo() {
-  return <Image src={AvivaBulow} className="AboutMe-image" alt="Aviva's Photo" fluid="true" roundedCircle="true" thumbnail="true" />
+  return (
+    <Card style={{ width: '10rem' }}>
+      <Image src={AvivaBulow} className="AboutMe-image" alt="Aviva's Photo" fluid="true" roundedCircle="true" />
+    </Card>
+  )
 }
 
 
