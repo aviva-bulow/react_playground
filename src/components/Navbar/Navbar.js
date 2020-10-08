@@ -1,5 +1,6 @@
 import React from 'react';
 import Navbar from 'react-bootstrap/Navbar';
+import Nav from 'react-bootstrap/Nav';
 
 function MyNavbar() {
   const date = new Date()
@@ -15,18 +16,28 @@ function MyNavbar() {
     msg = "Good Morning!"
   }
   return (
-    <Navbar fixed="top" bg="dark" variant="dark">
-      <Navbar.Brand href="#home">
-        Navbar with text.
-      </Navbar.Brand>
+    <div>
+      <a id="home"></a>
+      <Navbar fixed="top" bg="dark" variant="dark">
+        <Navbar.Brand href="#home">
+          Aviva Bulow
+        </Navbar.Brand>
 
-      <Navbar.Toggle />
-      <Navbar.Collapse className="justify-content-end">
-        <Navbar.Text>
-          {msg}
-        </Navbar.Text>
-      </Navbar.Collapse>
-    </Navbar>
+        <Nav className="mr-auto">
+          <Nav.Link href="#home"> Home</Nav.Link>
+          <Nav.Link href="#hobbies">Hobbies</Nav.Link>
+
+        </Nav>
+
+        <Navbar.Toggle />
+        <Navbar.Collapse className="justify-content-end">
+          <Navbar.Text>
+            {msg}
+          </Navbar.Text>
+        </Navbar.Collapse>
+      </Navbar>
+      <br />
+    </div >
   )
 }
 
