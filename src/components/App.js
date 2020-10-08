@@ -1,12 +1,11 @@
 import React from 'react';
-import './App.css';
 import MyNavbar from './Navbar/Navbar';
 import MainContent from './MainContent/MainContent'
 import Footer from './Footer/Footer'
 
 function App() {
   return (
-    <div className="App">
+    <div>
       <MyNavbar />
       <MainContent />
       <Footer />
