@@ -18,7 +18,8 @@ function MyNavbar() {
   return (
     <div>
       <a id="home"></a>
-      <Navbar fixed="top" bg="dark" variant="dark">
+      <Navbar sticky="top" bg="dark" variant="dark" >
+
         <Navbar.Brand href="#home">
           Aviva Bulow
         </Navbar.Brand>
@@ -26,17 +27,13 @@ function MyNavbar() {
         <Nav className="mr-auto">
           <Nav.Link href="#home"> Home</Nav.Link>
           <Nav.Link href="#hobbies">Hobbies</Nav.Link>
-
         </Nav>
 
-        <Navbar.Toggle />
-        <Navbar.Collapse className="justify-content-end">
-          <Navbar.Text>
-            {msg}
-          </Navbar.Text>
-        </Navbar.Collapse>
+        <Navbar.Text>
+          {msg}
+        </Navbar.Text>
+
       </Navbar>
-      <br />
     </div >
   )
 }
