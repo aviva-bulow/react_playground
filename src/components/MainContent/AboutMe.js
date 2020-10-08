@@ -25,12 +25,17 @@ function Hobbies() {
   return (
     <div>
       <a id="hobbies"></a>
-      <h3>Hobbies</h3>
-      <ul>
-        <li>Running</li>
-        <li>Backpacking</li>
-        <li>Gardening</li>
-      </ul>
+
+      <Card.Body>
+        <Card.Title>Hobbies</Card.Title>
+        <Card.Text>
+          <ul>
+            <li>Running</li>
+            <li>Backpacking</li>
+            <li>Gardening</li>
+          </ul>
+        </Card.Text>
+      </Card.Body>
     </div>
   )
 }
