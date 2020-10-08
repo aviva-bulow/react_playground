@@ -3,18 +3,28 @@ import { Card, Form } from "react-bootstrap";
 import "./MainContent.css"
 
 function ToDoList() {
+  let toDo = ["Learn React", "Set up garden timelapse", "Work on resume", "Create personal website"]
+
   return (
     <div className="ToDoList">
       <Card.Title>
         ToDo List
       </Card.Title>
 
-      <Form.Group controlId="formBasicCheckbox">
-        <Form.Check type="checkbox" label="This is an item">
+      <Form>
+        {toDo.map(ListItem)}
 
-        </Form.Check>
-      </Form.Group>
+      </Form>
     </div>
+  )
+}
+
+function ListItem(text) {
+  return (
+    <Form.Check
+      type='checkbox'
+      label={`${text}`}
+    />
   )
 }
 
