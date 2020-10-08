@@ -1,20 +1,23 @@
 import React from "react";
+import { Card } from "react-bootstrap";
+import Image from 'react-bootstrap/Image'
 import AvivaBulow from "./AvivaBulow.jpg"
 import "./MainContent.css"
-
 
 function AboutMe() {
   return (
     <div className="AboutMe">
-      <Photo />
-      <Hobbies />
-      <LinkedIn />
-    </div>
+      <Card style={{ width: '18rem' }}>
+        <Photo />
+        <Hobbies />
+        <LinkedIn />
+      </Card>
+    </div >
   )
 }
 
 function Photo() {
-  return <img src={AvivaBulow} className="AboutMe-image" alt="Aviva's Photo" />
+  return <Image src={AvivaBulow} className="AboutMe-image" alt="Aviva's Photo" fluid="true" roundedCircle="true" thumbnail="true" />
 }
 
 
