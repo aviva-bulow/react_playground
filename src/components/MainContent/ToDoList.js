@@ -1,19 +1,21 @@
 import React from "react";
+import { Card, Form } from "react-bootstrap";
 import "./MainContent.css"
 
 function ToDoList() {
-    return (
-        <div className="ToDoList">
-            <input type="checkbox" />
-            <p>placeholder</p>
+  return (
+    <div className="ToDoList">
+      <Card.Title>
+        ToDo List
+      </Card.Title>
 
-            <input type="checkbox" />
-            <p>placeholder</p>
+      <Form.Group controlId="formBasicCheckbox">
+        <Form.Check type="checkbox" label="This is an item">
 
-            <input type="checkbox" />
-            <p>placeholder</p>
-        </div>
-    )
+        </Form.Check>
+      </Form.Group>
+    </div>
+  )
 }
 
 export default ToDoList;
