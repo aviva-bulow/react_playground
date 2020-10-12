@@ -1,10 +1,15 @@
 import React from 'react';
+import { Container, Navbar } from 'react-bootstrap';
 import './Footer.css'
 
 function Footer() {
-    return <footer className='Footer'>
-        This is a footer.
-    </footer>
+  return <Container>
+    <Navbar fixed="bottom" expand="lg" variant="dark" bg="dark">
+      <Navbar.Text>
+        This is the footer.
+      </Navbar.Text>
+    </Navbar>
+  </Container>
 }
 
 export default Footer;
