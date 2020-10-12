@@ -1,6 +1,5 @@
 import React from "react";
 import { Card, Form } from "react-bootstrap";
-import "./MainContent.css"
 
 function ToDoList() {
   let toDo = ["Learn React", "Set up garden timelapse", "Work on resume", "Create personal website"]

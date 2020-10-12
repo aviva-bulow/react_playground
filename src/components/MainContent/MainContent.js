@@ -1,24 +1,25 @@
 import React from 'react';
-import AboutMe from "./AboutMe";
-import ToDoList from "./ToDoList";
+import LeftHandSide from "./LeftHandSide/LeftHandSide";
+import RightHandSide from "./RightHandSide/RightHandSide";
 import "./MainContent.css"
 import { Card, CardColumns } from 'react-bootstrap';
 
 function MainContent() {
 
   return (
-    <header className="MainContent-header">
+    <div className="MainContent-main">
       <CardColumns>
-        <Card>
-          <AboutMe />
+        <Card >
+          <LeftHandSide />
         </Card>
 
         <Card>
-          <ToDoList />
+          <RightHandSide />
         </Card>
 
       </CardColumns>
-    </header>)
+    </div>
+  )
 
 }
 

@@ -1,12 +1,12 @@
 import React from 'react';
-import MyNavbar from './Navbar/Navbar';
+import Header from './Header/Header';
 import MainContent from './MainContent/MainContent'
 import Footer from './Footer/Footer'
 
 function App() {
   return (
     <div>
-      <MyNavbar />
+      <Header />
       <MainContent />
       <Footer />
     </div>
