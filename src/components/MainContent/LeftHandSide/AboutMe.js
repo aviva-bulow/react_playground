@@ -1,5 +1,5 @@
 import React from "react";
-import { Accordion, Card, Button } from "react-bootstrap";
+import { Card } from "react-bootstrap";
 import Image from 'react-bootstrap/Image'
 import AvivaBulow from "./AvivaBulow.jpg"
 import AccordionComponent from "../AccordionComponent"
