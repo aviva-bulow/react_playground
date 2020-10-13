@@ -3,6 +3,7 @@ import { Card } from "react-bootstrap";
 import Image from 'react-bootstrap/Image'
 import AvivaBulow from "./AvivaBulow.jpg"
 import AccordionComponent from "../AccordionComponent"
+import Skills from "./Skills"
 
 function AboutMe() {
   return (
@@ -11,6 +12,7 @@ function AboutMe() {
         <Photo />
         <MyTitle />
         <ProfessionalSummary />
+        <Skills />
       </Card.Body>
     </div >
   )
@@ -32,7 +34,7 @@ function MyTitle() {
 
 function ProfessionalSummary() {
   return <div ><AccordionComponent
-    href="#professional_summary"
+    // defaultActiveKey="0"
     title="Professional Summary"
 
     body="A software engineer with 6 years experience,
