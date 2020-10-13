@@ -1,4 +1,3 @@
-import { DatePicker } from "antd";
 import React from "react";
 import { Card, Container, ProgressBar, Row, Col, } from "react-bootstrap";
 import AccordionComponent from "../AccordionComponent";
@@ -8,7 +7,6 @@ function LanguageSkills() {
     <LanguageSkill name="Python" skillLevel="90" libraries={["multiprocessing", "unittest", "vpython", "numpy", "Spacy"]} />
     {/* <LanguageSkill name="JavaScript" skillLevel="40" /> */}
     <LanguageSkill name="Java" skillLevel="65" libraries={["awt", "swing"]} />
-
   </div>
 }
 
