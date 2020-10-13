@@ -34,8 +34,8 @@ function MyTitle() {
 
 function ProfessionalSummary() {
   return <div ><AccordionComponent
-    // defaultActiveKey="0"
     title="Professional Summary"
+    // id="professional_summary"
 
     body="A software engineer with 6 years experience,
       primarily developing back-end systems in Python,

@@ -14,10 +14,10 @@ function Skills() {
 
   </div >
 
+
   return <AccordionComponent
     title="Skills"
     body={skills}
-  // defaultActiveKey="0"
   />
 
 }
