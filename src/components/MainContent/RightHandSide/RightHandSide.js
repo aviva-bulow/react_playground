@@ -1,8 +1,7 @@
 import React from 'react'
-import ToDoList from "./ToDoList"
 
 function RightHandSide() {
-  return <ToDoList />
+  return <div></div>
 }
 
 export default RightHandSide

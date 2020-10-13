@@ -1,6 +1,6 @@
 import React from "react";
 import { Card } from "react-bootstrap";
-import Image from 'react-bootstrap/Image'
+import { Image } from 'antd';
 import AvivaBulow from "./AvivaBulow.jpg"
 import AccordionComponent from "../AccordionComponent"
 import Skills from "./Skills"
@@ -20,9 +20,7 @@ function AboutMe() {
 
 function Photo() {
   return (
-    <Card style={{ width: '10rem' }}>
-      <Image src={AvivaBulow} className="AboutMe-image" alt="Aviva's Photo" fluid="true" roundedCircle="true" />
-    </Card>
+    <Image src={AvivaBulow} className="AboutMe-image" alt="Aviva's Photo" />
   )
 }
 
