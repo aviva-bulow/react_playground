@@ -3,7 +3,7 @@ import { Accordion, Card, Button } from "react-bootstrap";
 
 
 function AccordionComponent(props) {
-  return <Accordion defaultActiveKey="0">
+  return <Accordion defaultActiveKey={props.defaultActiveKey}>
 
     <Card href={props.href}>
       <Card.Header>
