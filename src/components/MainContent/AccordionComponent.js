@@ -1,25 +1,16 @@
 import React from "react";
-import { Accordion, Card, Button } from "react-bootstrap";
+import { Collapse } from "antd";
+
+const { Panel } = Collapse;
 
 
 function AccordionComponent(props) {
-  return <Accordion defaultActiveKey={props.defaultActiveKey}>
 
-    <Card href={props.href}>
-      <Card.Header>
-        <Accordion.Toggle as={Button} variant="link" eventKey="0">
-          {props.title}
-        </Accordion.Toggle>
-      </Card.Header>
-
-      <Accordion.Collapse eventKey="0">
-        <Card.Body>
-          {props.body}
-        </Card.Body>
-      </Accordion.Collapse>
-
-    </Card>
-  </Accordion>
+  return <Collapse >
+    <Panel header={props.title} key='1'>
+      {props.body}
+    </Panel>
+  </Collapse>
 }
 
 export default AccordionComponent;
