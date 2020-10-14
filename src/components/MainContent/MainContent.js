@@ -1,8 +1,7 @@
 import React from 'react';
 import LeftHandSide from "./LeftHandSide/LeftHandSide";
 import RightHandSide from "./RightHandSide/RightHandSide";
-import { Card } from 'react-bootstrap';
-import { Row } from 'antd';
+import { Row, Card } from 'antd';
 
 
 function MainContent() {
