@@ -1,6 +1,5 @@
 import React from "react";
-import { Card } from "react-bootstrap";
-import { Avatar } from 'antd';
+import { Avatar, Card } from 'antd';
 import AvivaBulow from "./AvivaBulow.jpg"
 import AccordionComponent from "../AccordionComponent"
 import Skills from "./Skills"
@@ -8,12 +7,12 @@ import Skills from "./Skills"
 function AboutMe() {
   return (
     <div className="AboutMe">
-      <Card.Body >
+      <Card bordered={false}>
         <Photo />
         <MyTitle />
         <ProfessionalSummary />
-        <Skills />
-      </Card.Body>
+      </Card>
+      <Skills />
     </div >
   )
 }
@@ -28,26 +27,22 @@ function Photo() {
 }
 
 function MyTitle() {
-  return <Card.Title>
+  return <h2>
     Entrepreneur & Software Engineer
-  </Card.Title>
+  </h2>
 }
 
 function ProfessionalSummary() {
-  return <div ><AccordionComponent
-    title="Professional Summary"
-    // id="professional_summary"
 
-    body="A software engineer with 6 years experience,
-      primarily developing back-end systems in Python,
-      I’m currently learning front-end development in
-      JavaScript/HTML with React+Ant.
-      As an analytical thinker with a background in mathematics,
-      I enjoy tackling difficult problems and exploring new ideas.
-      I’m highly effective at communicating complex
-      concepts across knowledge barriers."
-  />
-  </div>
+
+  return <Card bordered={false} style={{}}><p>A software engineer with 6 years experience,
+  primarily developing back-end systems in Python,
+  I’m currently learning front-end development in
+  JavaScript/HTML with React+Ant.
+  As an analytical thinker with a background in mathematics,
+  I enjoy tackling difficult problems and exploring new ideas.
+  I’m highly effective at communicating complex
+      concepts across knowledge barriers.</p></Card>
 }
 
 

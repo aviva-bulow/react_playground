@@ -1,23 +1,28 @@
 import React from 'react';
 import LeftHandSide from "./LeftHandSide/LeftHandSide";
 import RightHandSide from "./RightHandSide/RightHandSide";
-import { Row, Card } from 'antd';
+import { Row, Card, Col } from 'antd';
 
 
 function MainContent() {
 
   return (
     <div >
-      <Row>
-        <Card >
-          <LeftHandSide />
-        </Card>
+      <Card>
+        <Row>
+          <Col span={8}>
+            <Card >
+              <LeftHandSide />
+            </Card>
+          </Col>
 
-        <Card>
-          <RightHandSide />
-        </Card>
+          <Col span={16}>
+            <RightHandSide />
 
-      </Row>
+          </Col>
+
+        </Row>
+      </Card>
     </div>
   )
 
