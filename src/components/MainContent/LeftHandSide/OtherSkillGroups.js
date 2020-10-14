@@ -1,5 +1,4 @@
 import React from "react";
-import { Card } from "antd";
 import AccordionComponent from "../AccordionComponent";
 import Skill from "./Skill";
 

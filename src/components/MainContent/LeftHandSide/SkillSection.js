@@ -2,7 +2,7 @@ import React from "react";
 import LanguageSkills from "./LanguageSkills";
 import OtherSkillGroups from "./OtherSkillGroups";
 
-function Skills() {
+function SkillSection() {
   return (
     <div>
       <LanguageSkills />
@@ -47,4 +47,4 @@ function Skills() {
   );
 }
 
-export default Skills;
+export default SkillSection;

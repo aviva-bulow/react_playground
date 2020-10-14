@@ -1,8 +1,14 @@
-import React from "react"
-import AboutMe from "./AboutMe"
+import React from "react";
+import AboutMe from "./AboutMe";
+import SkillSection from "./SkillSection";
 
 function LeftHandSide() {
-  return <AboutMe />
+  return (
+    <div>
+      <AboutMe />
+      <SkillSection />
+    </div>
+  );
 }
 
 export default LeftHandSide;
