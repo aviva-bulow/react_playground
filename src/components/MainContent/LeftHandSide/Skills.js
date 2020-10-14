@@ -5,20 +5,14 @@ import LanguageSkills from "./LanguageSkills"
 
 function Skills() {
 
-  let skills = <div>
+
+  return <div>
     <LanguageSkills />
     {/* <ComputingSkills /> */}
     {/* <MathSkills /> */}
     {/* <ScienceSkills /> */}
     {/* <LeadershipSkills /> */}
-
-  </div >
-
-
-  return <AccordionComponent
-    title="Skills"
-    body={skills}
-  />
+  </div>
 
 }
 

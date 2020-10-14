@@ -3,7 +3,7 @@ import { Row, Col, Progress } from "antd";
 import AccordionComponent from "../AccordionComponent";
 
 function LanguageSkills() {
-  return <div>
+  let body = (<div>
     <LanguageSkill name="Python" skillLevel="90" libraries={["multiprocessing", "unittest", "vpython", "numpy", "Spacy"]} />
     {/* <LanguageSkill name="JavaScript" skillLevel="40" /> */}
     <LanguageSkill name="C" skillLevel="65" libraries={["MPI", "OpenMp"]} />
@@ -11,7 +11,9 @@ function LanguageSkills() {
 
     <LanguageSkill name="R" skillLevel="65" libraries={["ggplot2"]} />
     <LanguageSkill name="SQLite" skillLevel="50" libraries={[]} />
-  </div>
+  </div>)
+
+  return <AccordionComponent title="Programming Languages" body={body} />
 }
 
 function LanguageSkill(props) {
