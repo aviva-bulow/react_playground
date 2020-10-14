@@ -1,6 +1,6 @@
 import React from "react";
 import { Card } from "react-bootstrap";
-import { Image } from 'antd';
+import { Avatar } from 'antd';
 import AvivaBulow from "./AvivaBulow.jpg"
 import AccordionComponent from "../AccordionComponent"
 import Skills from "./Skills"
@@ -20,7 +20,10 @@ function AboutMe() {
 
 function Photo() {
   return (
-    <Image src={AvivaBulow} className="AboutMe-image" alt="Aviva's Photo" />
+    <Avatar
+      size={{ xs: 24 * 3, sm: 32 * 3, md: 40 * 3, lg: 64 * 3, xl: 80 * 3, xxl: 100 * 3 }}
+      src={AvivaBulow}
+    />
   )
 }
 

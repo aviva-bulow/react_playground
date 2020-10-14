@@ -1,14 +1,15 @@
 import React from 'react';
 import LeftHandSide from "./LeftHandSide/LeftHandSide";
 import RightHandSide from "./RightHandSide/RightHandSide";
-import "./MainContent.css"
-import { Card, CardColumns } from 'react-bootstrap';
+import { Card } from 'react-bootstrap';
+import { Row } from 'antd';
+
 
 function MainContent() {
 
   return (
-    <div className="MainContent-main">
-      <CardColumns>
+    <div >
+      <Row>
         <Card >
           <LeftHandSide />
         </Card>
@@ -17,7 +18,7 @@ function MainContent() {
           <RightHandSide />
         </Card>
 
-      </CardColumns>
+      </Row>
     </div>
   )
 
