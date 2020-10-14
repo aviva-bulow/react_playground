@@ -41,7 +41,7 @@ function ProfessionalSummary() {
     body="A software engineer with 6 years experience,
       primarily developing back-end systems in Python,
       I’m currently learning front-end development in
-      JavaScript/HTML with React+Bootstrap.
+      JavaScript/HTML with React+Ant.
       As an analytical thinker with a background in mathematics,
       I enjoy tackling difficult problems and exploring new ideas.
       I’m highly effective at communicating complex
