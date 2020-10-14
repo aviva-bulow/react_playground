@@ -6,7 +6,11 @@ function LanguageSkills() {
   return <div>
     <LanguageSkill name="Python" skillLevel="90" libraries={["multiprocessing", "unittest", "vpython", "numpy", "Spacy"]} />
     {/* <LanguageSkill name="JavaScript" skillLevel="40" /> */}
+    <LanguageSkill name="C" skillLevel="65" libraries={["MPI", "OpenMp"]} />
     <LanguageSkill name="Java" skillLevel="65" libraries={["awt", "swing"]} />
+
+    <LanguageSkill name="R" skillLevel="65" libraries={["ggplot2"]} />
+    <LanguageSkill name="SQLite" skillLevel="50" libraries={[]} />
   </div>
 }
 
@@ -14,6 +18,7 @@ function LanguageSkill(props) {
   console.log(props.name)
   // props.libraries
   console.log(props.skillLevel > 10)
+
   let title = (
     <Row >
       <Col span={8}><p>{props.name}</p></Col>
