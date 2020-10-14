@@ -1,5 +1,5 @@
 import React from "react";
-import { Card, Container, ProgressBar, Row, Col, } from "react-bootstrap";
+import { Row, Col, Progress } from "antd";
 import AccordionComponent from "../AccordionComponent";
 
 function LanguageSkills() {
@@ -14,18 +14,20 @@ function LanguageSkill(props) {
   console.log(props.name)
   // props.libraries
   console.log(props.skillLevel > 10)
-  let title = (<Container>
+  let title = (
     <Row >
-      <Col ><Card.Text>{props.name}</Card.Text></Col>
-      <Col ><ProgressBar variant="success" now={props.skillLevel} label={`${props.skillLevel}%`} /></Col>
+      <Col span={8}><p>{props.name}</p></Col>
+      <Col span={13} offset={3}>
+
+        <Progress percent={props.skillLevel} size="small" strokeColor='green' />
+      </Col>
     </Row>
-  </Container>
   )
   return <AccordionComponent title={title} body={props.libraries.map(LanguageLibrary)} />
 }
 
 function LanguageLibrary(name) {
-  return <Card.Text>{name}</Card.Text>
+  return <p>{name}</p>
 
 }
 
