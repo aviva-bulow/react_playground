@@ -10,6 +10,7 @@ function LanguageSkills() {
       body={languageSkillsData.map((languageSkill) => (
         <LanguageSkill
           name={languageSkill.name}
+          key={languageSkill.name}
           skillLevel={languageSkill.skillLevel}
           libraries={languageSkill.libraries}
         />
@@ -33,16 +34,17 @@ function LanguageSkill(props) {
       </Col>
     </Row>
   );
+  // if (props.libraries.length < 1) {
+  //   return <Skill name={title} />;
+  // }
   return (
     <AccordionComponent
       title={title}
-      body={props.libraries.map(LanguageLibrary)}
+      body={props.libraries.map((libName) => (
+        <p>{libName}</p>
+      ))}
     />
   );
-}
-
-function LanguageLibrary(name) {
-  return <p>{name}</p>;
 }
 
 export default LanguageSkills;
