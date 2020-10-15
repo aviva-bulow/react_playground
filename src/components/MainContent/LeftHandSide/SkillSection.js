@@ -2,14 +2,16 @@ import React from "react";
 import LanguageSkills from "./LanguageSkills";
 import OtherSkills from "./OtherSkills";
 
-function SkillSection() {
-  return (
-    <div>
-      <LanguageSkills />
+class SkillSection extends React.Component {
+  render() {
+    return (
+      <div>
+        <LanguageSkills />
 
-      <OtherSkills />
-    </div>
-  );
+        <OtherSkills />
+      </div>
+    );
+  }
 }
 
 export default SkillSection;
