@@ -7,7 +7,10 @@ function OtherSkills(props) {
   return otherSkillsData.map((skillClass) => (
     <AccordionComponent
       title={skillClass.title}
-      body={skillClass.skillList.map(Skill)}
+      body={skillClass.skillList.map((skillName) => (
+        <Skill name={skillName} key={skillName} />
+      ))}
+      key={skillClass.title}
     />
   ));
 }
