@@ -1,7 +1,9 @@
-import React from 'react'
+import React from "react";
 
-function RightHandSide() {
-  return <div></div>
+class RightHandSide extends React.Component {
+  render() {
+    return <div></div>;
+  }
 }
 
-export default RightHandSide
+export default RightHandSide;
