@@ -1,6 +1,7 @@
 import React from "react";
 import { Avatar, Card } from "antd";
 import AvivaBulow from "./AvivaBulow.jpg";
+import Pollinator from "./Pollinator.JPG";
 
 class AboutMe extends React.Component {
   render() {
@@ -17,6 +18,33 @@ class AboutMe extends React.Component {
 }
 
 class Photo extends React.Component {
+  constructor() {
+    super();
+    this.state = {
+      photo: AvivaBulow,
+    };
+    this.handleMouseOver = this.handleMouseOver.bind(this);
+    this.handleMouseOut = this.handleMouseOut.bind(this);
+  }
+
+  handleMouseOver() {
+    this.setState((prevState) => {
+      return {
+        ...prevState,
+        photo: Pollinator,
+      };
+    });
+  }
+
+  handleMouseOut() {
+    this.setState((prevState) => {
+      return {
+        ...prevState,
+        photo: AvivaBulow,
+      };
+    });
+  }
+
   render() {
     return (
       <Avatar
@@ -28,7 +56,9 @@ class Photo extends React.Component {
           xl: 80 * 3,
           xxl: 100 * 3,
         }}
-        src={AvivaBulow}
+        src={this.state.photo}
+        onMouseOver={this.handleMouseOver}
+        onMouseOut={this.handleMouseOut}
       />
     );
   }
